@@ -11,16 +11,18 @@
   "dependencies": {
     "next": "14.2.13",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.79.4"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "^20.16.10",
+    "@types/react": "^18.3.10",
     "@types/react-dom": "^18",
-    "eslint": "^8",
+    "eslint": "^8.57.1",
     "eslint-config-next": "14.2.13",
-    "typescript": "^5",
-    "vite": "^5.4.8",
-    "vite-plugin-next": "^0.0.1-beta.1"
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5"
   }
 }
