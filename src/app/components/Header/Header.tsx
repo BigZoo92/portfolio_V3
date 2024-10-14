@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import './header.scss'
 import { fontTitle } from '@/app/layout'
-import { gridProps } from '@/app/types'
+import { GridProps } from '@/app/types'
 
-const Header = ({ rows, columns }: gridProps) => {
+const Header = ({ rows, columns }: GridProps) => {
   return (
     <header
       className="section"

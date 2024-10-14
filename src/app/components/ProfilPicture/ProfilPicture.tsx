@@ -1,19 +1,12 @@
 import './profil_picture.scss'
 import Image from 'next/image'
 import profilePic from '../../images/me.png'
-import { gridProps } from '@/app/types'
+import { GridProps } from '@/app/types'
+import { Card } from '../Card'
 
-const ProfilPicture = ({ rows, columns }: gridProps) => {
+const ProfilPicture = (props: GridProps) => {
   return (
-    <section
-      className="sectioon cd_image"
-      style={{
-        gridColumnStart: columns[0],
-        gridColumnEnd: columns[1],
-        gridRowStart: rows[0],
-        gridRowEnd: rows[1],
-      }}
-    >
+    <Card className="cd_image" {...props}>
       <Image
         src={profilePic}
         alt="Picture of the author Enzo Givernaud"
@@ -21,7 +14,7 @@ const ProfilPicture = ({ rows, columns }: gridProps) => {
         priority
         fill
       />
-    </section>
+    </Card>
   )
 }
 

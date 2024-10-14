@@ -1,24 +1,19 @@
 import { fontTitle } from '@/app/layout'
-import { gridProps } from '@/app/types'
+import { GridProps } from '@/app/types'
 import './contact.scss'
+import { Card } from '../Card'
 
-const Contact = ({ rows, columns }: gridProps) => {
+const Contact = (props: GridProps) => {
   return (
-    <section
-      className="section contact"
-      style={{
-        gridColumnStart: columns[0],
-        gridColumnEnd: columns[1],
-        gridRowStart: rows[0],
-        gridRowEnd: rows[1],
-      }}
-    >
-      <p>Any questions ?</p>
+    <Card className="contact" {...props}>
+      <p>
+        Dou you have <br /> Any questions ?
+      </p>
       <h3>
         <b className={fontTitle.className}>Contact</b>
         <i>Me</i>
       </h3>
-    </section>
+    </Card>
   )
 }
 

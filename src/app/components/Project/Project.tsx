@@ -1,18 +1,9 @@
-import { gridProps } from '@/app/types'
+import { GridProps } from '@/app/types'
 import './project.scss'
+import { Card } from '../Card'
 
-const Project = ({ rows, columns }: gridProps) => {
-  return (
-    <section
-      className="section"
-      style={{
-        gridColumnStart: columns[0],
-        gridColumnEnd: columns[1],
-        gridRowStart: rows[0],
-        gridRowEnd: rows[1],
-      }}
-    ></section>
-  )
+const Project = (props: GridProps) => {
+  return <Card className="section" {...props}></Card>
 }
 
 export default Project
