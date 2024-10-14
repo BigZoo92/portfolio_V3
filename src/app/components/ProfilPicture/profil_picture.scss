@@ -1,0 +1,17 @@
+@import '../../sass/variables';
+
+.cd_image {
+  border-radius: $border-radius;
+  position: relative;
+  width: 100%;
+  height: 100%; // Assure que la section prend toute la place disponible
+  overflow: hidden;
+  padding: 0; // Assure qu'il n'y a pas de décalage
+  margin: 0; // Retirer toute marge éventuelle
+  img {
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+}

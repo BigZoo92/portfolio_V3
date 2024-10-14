@@ -1,0 +1,15 @@
+@import '../../sass/variables';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: $padding;
+    }
+  }
+}
